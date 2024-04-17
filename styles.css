@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+/* Nền  */
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Ô chứa */
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* chia 2 phía làm 3 phần, phần trái chiếm 1, phần phải chiếm 2 */
+}
+
+/* phía bên trái */
+.container .left_side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.info{
+    position: relative;
+}
+
+.info ul li{
+    color: #fff;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.profile_text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 40px;
+}
+
+.profile_text .img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile_text .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile_text h2{
+    color:  #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profile_text h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contact_info{
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.contact_info ul{
+    position: relative;
+}
+
+.contact_info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact_info ul li .icon{
+    display: inline-block;
+    width: 20px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contact_info ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+.education li{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.education li{
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.education h4{
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.education h5:nth-child(0){
+    color: #fff;
+    font-weight: 500;
+}
+
+.education h5{
+    color: #fff;
+    font-weight: 300;
+}
+
+
+.container .right_side{
+    position: relative;
+    background: white;
+    padding: 40px;
+    min-width: 150px;
+}
+.intro{
+    margin-bottom: 40px;
+}
+.intro p{
+    font-size: 1.2em;
+    text-indent: 20px;
+}
+
+.title_2{
+    color: #003147;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.skill{
+    margin-bottom: 40px;
+}
+
+.skill .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+.skill .box h4{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.skill .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #adadad;
+}
+
+.skill .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #003147;
+}
+
+.s_w{
+    margin-bottom: 40px;
+}
+
+.s_w ul li{
+    list-style: '-';
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.achieve img{
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
